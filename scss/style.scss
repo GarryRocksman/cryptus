@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+@font-face {
+  font-family: "DOCKER";
+  src: url(../fonts/Docker\One.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../fonts/Montserrat-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+$fontSize: 8px;
+$headerFont:'Montserrat-Bold',
+sans-serif;
+$mainFont: "Montserrat Alternates",
+sans-serif;
+//colors 
+$mainColor: #f59b00;
+$textColor: #919191;
+$secondaryColor: #0a92ab;
+$lightColor: #ffff;
+$secondaryLight: #feca06;
+
+html {
+  font-size: $fontSize;
+}
+
+.navigation {
+  z-index: 9999;
+  position: relative;
+
+  .logo {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .navbar-nav {
+    width: auto;
+    position: fixed;
+    top: 40px;
+    left:50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: $mainFont;
+    font-weight: normal;
+    font-size: 2rem;
+    .nav-item {
+      margin-right: 30px;
+      display: inline;
+      text-decoration: none;
+      color:$secondaryColor;
+      &:hover {
+      color:$textColor;
+      }
+    }
+    
+
+  }
+
+  .navbar-toggler {
+    position: relative;
+    right: 10px;
+    top: -10px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .navigation {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1000;
+  }
+
+  .navbar-toggler-icon {
+    font-size: 3rem;
+  }
+}
+
+.button {
+  display: block;
+  width: 25rem;
+  height:6rem;
+  border-radius: 25px;
+  margin-top: 16px;
+  font-size: 2rem;
+  font-family: $mainFont;
+  color: $lightColor;
+  border: none;
+  box-shadow: 0 0 2px rgba($color: $secondaryColor, $alpha: 0.5);
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+  
+  
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: lighten($color: #000000, $amount: 50);
+    color: white;
+  }
+
+  &-install-telegram {
+    background-color: $secondaryColor;
+  }
+
+  &-install-bot {
+    background-color: $mainColor;
+  }
+  &-free-forever {
+    background-color: $secondaryLight;
+    width: 30rem;
+    height:6rem;
+    color:$secondaryColor;
+    margin-top: 20px;
+  }
+  &-support{
+    background-color: $secondaryLight;
+    color:$secondaryColor;
+  }
+}
+
+.content {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;   
+  
+  &-header {
+    background-image: url(../assets/background/header.png); 
+    height: 750px;
+
+  .header-content {
+      padding: 40px;
+      margin-top: 60px;
+      margin-left: 30px;
+      position: relative;
+      z-index: 1000;
+  
+      &-text {
+        margin-top: 10px;
+        font-size: 5.5rem;
+        text-transform: uppercase;
+        font-family: $headerFont;
+        color: $mainColor;
+      }
+  
+      &-description {
+        margin-top: 16px;
+        padding: 8px;
+        font-size: 2.5rem;
+        font-family: $mainFont;
+        color: $textColor;
+        width: 50rem;
+      }
+  
+    .header-buttons {
+        margin-top: 48px; 
+      }
+  }
+
+  .phone-images {
+      position: relative;
+      top: -66px;
+      left:-40px
+  }  
+
+  .image {
+      &-right {
+        position: relative;
+        top: 100px;
+        width: 320px;
+        z-index: 1000;
+      }
+  
+      &-left {
+        position: relative;
+        width: 240px;
+        left: -100px;
+        
+      }
+  }
+
+  }
+
+  &-main {
+    background-image: url(../assets/background/main.png);
+    margin-bottom: 20px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  
+  
+
+    .botlogo {
+      width: 200px; 
+    }
+
+
+    .main-description {
+      font-family: $mainFont;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: $textColor;
+    }
+    .main-h1 {
+      font-family: $headerFont;
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 50px;
+      margin-top: 100px;
+      color: $secondaryColor;
+    }
+
+    .information-container {
+      margin-top: 20px;
+      text-align: center;
+      margin-bottom: 50px;
+
+      .text-container {
+        border: 1px solid $textColor;
+        border-radius:25px;
+        height: 200px;
+        padding: 20px;
+        &:hover {
+          border: 1px solid $secondaryColor;
+          background-color: rgba($color: $secondaryColor, $alpha: 0.1);
+          cursor: pointer;
+          box-shadow: 0 0 10px rgba($color: $secondaryColor, $alpha: 0.1);;
+        }
+      }
+      
+      &-img {
+        width: 5rem;
+        margin-bottom: 20px;
+        text-align: center;
+        
+      }
+      &-header {
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-family: $headerFont;
+        font-size: 2rem;
+        color: $textColor
+      }
+      &-description {
+        margin-bottom: 10px;
+        font-family: $mainFont;
+        font-size: 1.8rem;
+        color: $textColor
+      }
+    }
+
+    .separator {
+      margin-top: 80px;
+      border-top: 1px solid $mainColor;
+      &-header {
+        margin-top: 20px;
+      }
+    }
+
+    .text-area {
+      margin-top: 100px;
+      font-family: $mainFont;
+      color: $textColor;
+      &-header {
+        font-size: 3rem;
+        margin-bottom: 40px;
+        font-family: $headerFont;
+        
+      }
+      &-list {
+        padding-left: 40px;
+        list-style-type: decimal;
+        margin-bottom: 100px;
+      }
+      &-list-item {
+        font-size: 2rem;
+        margin-bottom: 50px;
+      }
+    }
+
+    .video-area {
+      margin-top: 20px;
+  
+      &-placeholder {
+          width: 300px;
+        }
+      } 
+
+      #accordion {
+        box-shadow: none;
+        border-radius: 25px;
+        margin-bottom: 100px;
+        margin-top: 50px;
+    
+        .card-header {
+          background-color:$secondaryColor;
+          padding: 20px;
+        }
+        
+        .card ,
+        .card-header {
+          border-radius: 25px;
+        }
+        h5 {
+          font-family: $headerFont;
+          font-size: 2rem;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        p {
+          font-family: $mainFont;
+          font-size: 2rem;
+          color: $textColor;
+          margin:10px;
+        }
+      }
+  }
+
+  &-footer {
+    background-image: url(../assets/background/footer.png);   
+    height: 180px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+
+    .button-container {
+      padding-top: 30px;  
+      // margin-left: 10%; 
+      button {
+        display: inline;
+      }
+    }
+    .row {
+      text-align: center;
+    }
+
+    .copyright {
+      margin-top: 50px;
+      font-family: $mainFont;
+      font-size: 2rem;
+      color: $textColor
+    }
+
+    
+  }
+  
+}
+
+
+
+
+
+
+
+
+//media
+
+
+@media (min-width: 320px) {
+  .container, .container-sm {
+    max-width: 400px;
+  }
+  html {
+    font-size: 5px;
+  }
+}
+
+
+@media (min-width: 440px) {
+  .container, .container-sm {
+    max-width: 539px;
+  }
+  html {
+    font-size: 6px;
+  }
+}
+
+
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+  html {
+    font-size: 8px;
+  }
+}
