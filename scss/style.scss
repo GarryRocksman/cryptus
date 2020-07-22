@@ -181,7 +181,7 @@ html {
   .phone-images {
       position: relative;
       top: -66px;
-      left:-40px
+      left:-10px
   }  
 
   .image {
@@ -196,7 +196,7 @@ html {
         position: relative;
         width: 240px;
         left: -100px;
-        
+        top:-9px;
       }
   }
 
@@ -208,12 +208,9 @@ html {
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   
-  
-
     .botlogo {
-      width: 200px; 
+      width: 20rem; 
     }
-
 
     .main-description {
       font-family: $mainFont;
@@ -300,11 +297,25 @@ html {
     }
 
     .video-area {
-      margin-top: 20px;
-  
+      position: relative;
+      margin-top: 40px;
+      top:-37.5rem;
+      height: 75rem;
+
+      &-video {
+        position: relative;
+        width: 31.7rem;
+       
+        top: 40.25rem;
+        z-index: 1000;
+        border-radius: 25px;
+      }
       &-placeholder {
-          width: 300px;
+        position: relative;
+          top: -31.25rem;
+          width: 37.5rem;
         }
+
       } 
 
       #accordion {
@@ -341,10 +352,13 @@ html {
 
   &-footer {
     background-image: url(../assets/background/footer.png);   
-    height: 180px;
     margin-bottom: 20px;
     border-radius: 50px;
 
+    .row {
+      text-align: center;
+    }
+    
     .button-container {
       padding-top: 30px;  
       // margin-left: 10%; 
@@ -352,12 +366,10 @@ html {
         display: inline;
       }
     }
-    .row {
-      text-align: center;
-    }
+    
 
     .copyright {
-      margin-top: 50px;
+      margin: 30px;
       font-family: $mainFont;
       font-size: 2rem;
       color: $textColor
@@ -393,7 +405,7 @@ html {
     max-width: 539px;
   }
   html {
-    font-size: 6px;
+    font-size:7px;
   }
 }
 
@@ -404,7 +416,7 @@ html {
     max-width: 540px;
   }
   html {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
 

@@ -181,7 +181,7 @@ html {
 .content-header .phone-images {
   position: relative;
   top: -66px;
-  left: -40px;
+  left: -10px;
 }
 
 .content-header .image-right {
@@ -195,6 +195,7 @@ html {
   position: relative;
   width: 240px;
   left: -100px;
+  top: -9px;
 }
 
 .content-main {
@@ -205,7 +206,7 @@ html {
 }
 
 .content-main .botlogo {
-  width: 200px;
+  width: 20rem;
 }
 
 .content-main .main-description {
@@ -300,11 +301,24 @@ html {
 }
 
 .content-main .video-area {
-  margin-top: 20px;
+  position: relative;
+  margin-top: 40px;
+  top: -37.5rem;
+  height: 75rem;
+}
+
+.content-main .video-area-video {
+  position: relative;
+  width: 31.7rem;
+  top: 40.25rem;
+  z-index: 1000;
+  border-radius: 25px;
 }
 
 .content-main .video-area-placeholder {
-  width: 300px;
+  position: relative;
+  top: -31.25rem;
+  width: 37.5rem;
 }
 
 .content-main #accordion {
@@ -344,9 +358,12 @@ html {
 
 .content-footer {
   background-image: url(../assets/background/footer.png);
-  height: 180px;
   margin-bottom: 20px;
   border-radius: 50px;
+}
+
+.content-footer .row {
+  text-align: center;
 }
 
 .content-footer .button-container {
@@ -357,12 +374,8 @@ html {
   display: inline;
 }
 
-.content-footer .row {
-  text-align: center;
-}
-
 .content-footer .copyright {
-  margin-top: 50px;
+  margin: 30px;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 2rem;
   color: #919191;
@@ -382,7 +395,7 @@ html {
     max-width: 539px;
   }
   html {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
 
@@ -391,7 +404,7 @@ html {
     max-width: 540px;
   }
   html {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
 
