@@ -16,6 +16,21 @@
 
 html {
   font-size: 8px;
+  scroll-behavior: smooth;
+}
+
+.material-icons {
+  position: relative;
+  margin: 0;
+  top: -6px;
+  margin-left: 20px;
+  padding: 0;
+  font-size: 2rem;
+  color: #ffff;
+}
+
+.material-icons:hover {
+  color: #919191;
 }
 
 .navigation {
@@ -33,9 +48,10 @@ html {
 }
 
 .navigation .navbar-nav {
-  width: auto;
+  width: 50%;
+  height: 100px;
   position: fixed;
-  top: 40px;
+  top: -40px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -46,9 +62,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -56,13 +72,16 @@ html {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: normal;
   font-size: 2rem;
+  background-color: #f59b00;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .navigation .navbar-nav .nav-item {
-  margin-right: 30px;
+  margin: 20px;
   display: inline;
   text-decoration: none;
-  color: #0a92ab;
+  color: #ffff;
 }
 
 .navigation .navbar-nav .nav-item:hover {
@@ -167,7 +186,6 @@ html {
 
 .content-header .header-content-description {
   margin-top: 16px;
-  padding: 8px;
   font-size: 2.5rem;
   font-family: "Montserrat Alternates", sans-serif;
   color: #919191;
@@ -180,22 +198,32 @@ html {
 
 .content-header .phone-images {
   position: relative;
-  top: -66px;
-  left: -10px;
+  top: -9rem;
+  width: 75rem;
 }
 
 .content-header .image-right {
   position: relative;
-  top: 100px;
-  width: 320px;
+  top: 12rem;
+  width: 40rem;
   z-index: 1000;
 }
 
 .content-header .image-left {
   position: relative;
-  width: 240px;
-  left: -100px;
-  top: -9px;
+  width: 30rem;
+  left: -12rem;
+  top: -1.2rem;
+}
+
+.content-header .image-one {
+  position: relative;
+  width: 35rem;
+  left: 12rem;
+  top: 12rem;
+  margin-bottom: 50px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
 }
 
 .content-main {
@@ -388,6 +416,18 @@ html {
   html {
     font-size: 5px;
   }
+  html {
+    font-size: 7px;
+  }
+  .image-left {
+    display: none;
+  }
+  .image-right {
+    display: none;
+  }
+  .image-one {
+    display: none;
+  }
 }
 
 @media (min-width: 440px) {
@@ -396,6 +436,15 @@ html {
   }
   html {
     font-size: 7px;
+  }
+  .image-left {
+    display: none;
+  }
+  .image-right {
+    display: none;
+  }
+  .image-one {
+    display: none;
   }
 }
 
@@ -406,6 +455,15 @@ html {
   html {
     font-size: 7px;
   }
+  .image-left {
+    display: none;
+  }
+  .image-right {
+    display: none;
+  }
+  .image-one {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -414,6 +472,15 @@ html {
   }
   html {
     font-size: 7px;
+  }
+  .image-left {
+    display: none;
+  }
+  .image-right {
+    display: none;
+  }
+  .image-one {
+    display: none;
   }
 }
 
@@ -424,6 +491,15 @@ html {
   html {
     font-size: 7px;
   }
+  .image-left {
+    display: none;
+  }
+  .image-right {
+    display: none;
+  }
+  .image-one {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -432,6 +508,16 @@ html {
   }
   html {
     font-size: 8px;
+  }
+  .image-left {
+    display: inline-block;
+  }
+  .image-right {
+    display: inline-block;
+    left: 0px;
+  }
+  .image-one {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
