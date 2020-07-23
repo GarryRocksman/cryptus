@@ -147,15 +147,14 @@ html {
 
 .button-install-bot {
   background-color: #f59b00;
+  display: inline;
 }
 
 .button-free-forever {
   background-color: #feca06;
-  width: 30rem;
-  height: 6rem;
   color: #0a92ab;
-  margin-top: 20px;
-  display: block;
+  margin-top: 50px;
+  display: inline-block;
 }
 
 .button-support {
@@ -173,9 +172,14 @@ html {
   height: 750px;
 }
 
+.content-header .botlogo {
+  position: relative;
+  top: -100px;
+  width: 30rem;
+}
+
 .content-header .header-content {
-  padding: 40px;
-  margin-top: 60px;
+  margin-top: 120px;
   margin-left: 30px;
   position: relative;
   z-index: 1000;
@@ -194,7 +198,6 @@ html {
   font-size: 2.5rem;
   font-family: "Montserrat Alternates", sans-serif;
   color: #919191;
-  width: 50rem;
 }
 
 .content-header .header-content .header-buttons {
@@ -218,7 +221,7 @@ html {
   position: relative;
   width: 30rem;
   left: -12rem;
-  top: -1.2rem;
+  top: 0.7rem;
 }
 
 .content-header .image-one {
@@ -238,10 +241,6 @@ html {
   border-bottom-right-radius: 60px;
 }
 
-.content-main .botlogo {
-  width: 20rem;
-}
-
 .content-main .main-description {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 2.5rem;
@@ -255,7 +254,7 @@ html {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 100px;
+  margin-top: 50px;
   color: #0a92ab;
 }
 
@@ -360,6 +359,8 @@ html {
   border-radius: 25px;
   margin-bottom: 100px;
   margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .content-main #accordion .card-header {
@@ -436,6 +437,14 @@ html {
   .nav-item {
     width: 100%;
   }
+  #header-content-text {
+    font-size: 3rem;
+  }
+  #botlogo {
+    top: 30px;
+    width: 20rem;
+    position: relative;
+  }
 }
 
 @media (min-width: 440px) {
@@ -456,6 +465,17 @@ html {
   }
   .nav-item {
     width: 100%;
+  }
+  #header-content-text {
+    font-size: 5.5rem;
+  }
+  .navbar-nav {
+    width: 40%;
+  }
+  #botlogo {
+    top: 10px;
+    width: 30rem;
+    position: relative;
   }
 }
 
@@ -478,6 +498,17 @@ html {
   .nav-item {
     width: 100%;
   }
+  #header-content-text {
+    font-size: 5.5rem;
+  }
+  .navbar-nav {
+    width: 40%;
+  }
+  #botlogo {
+    position: relative;
+    top: 1px;
+    width: 30rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -498,6 +529,17 @@ html {
   }
   .nav-item {
     width: 100%;
+  }
+  #header-content-text {
+    font-size: 5.5rem;
+  }
+  .navbar-nav {
+    width: 40%;
+  }
+  #botlogo {
+    position: relative;
+    top: 20px;
+    width: 30rem;
   }
 }
 
@@ -520,6 +562,17 @@ html {
   .nav-item {
     width: 100%;
   }
+  #header-content-text {
+    font-size: 5.5rem;
+  }
+  .navbar-nav {
+    width: 40%;
+  }
+  #botlogo {
+    position: relative;
+    top: -100px;
+    width: 30rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -541,6 +594,17 @@ html {
   }
   .nav-item {
     width: auto;
+  }
+  #header-content-text {
+    font-size: 5.5rem;
+  }
+  .navbar-nav {
+    width: 50%;
+  }
+  #botlogo {
+    position: relative;
+    top: -100px;
+    width: 30rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

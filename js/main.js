@@ -18,17 +18,5 @@ window.onload = function () {
             behavior: 'smooth'
         });
     };
-
-    for (var i = 0; i < navigationItems.length; i++) {
-        navigationItems.item(i).onclick = function () {
-            openButton.style.display = 'block';
-            window.scroll({
-                top: 0, 
-                left: 0, 
-                behavior: 'smooth'
-            });
-        };
-    }
-
     
 };

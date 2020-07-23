@@ -150,20 +150,22 @@ html {
 
   &-install-bot {
     background-color: $mainColor;
+    display: inline;
   }
   &-free-forever {
     background-color: $secondaryLight;
-    width: 30rem;
-    height:6rem;
     color:$secondaryColor;
-    margin-top: 20px;
-    display: block;
+    margin-top: 50px;
+    display: inline-block;
+    
   }
   &-support{
     background-color: $secondaryLight;
     color:$secondaryColor;
   }
 }
+
+
 
 .content {
   background-size: 100% 100%;
@@ -173,9 +175,18 @@ html {
     background-image: url(../assets/background/header.png); 
     height: 750px;
 
+
+    .botlogo {
+      position: relative;
+      top: -100px;
+      width: 30rem; 
+    }
+
   .header-content {
-      padding: 40px;
-      margin-top: 60px;
+
+    
+
+      margin-top: 120px;
       margin-left: 30px;
       position: relative;
       z-index: 1000;
@@ -194,7 +205,6 @@ html {
         font-size: 2.5rem;
         font-family: $mainFont;
         color: $textColor;
-        width: 50rem;
       }
   
     .header-buttons {
@@ -220,7 +230,7 @@ html {
         position: relative;
         width: 30rem;
         left: -12rem;
-        top:- 1.2rem;
+        top: 0.7rem;
       }
 
       &-one {
@@ -241,9 +251,7 @@ html {
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   
-    .botlogo {
-      width: 20rem; 
-    }
+    
 
     .main-description {
       font-family: $mainFont;
@@ -257,7 +265,7 @@ html {
       font-size: 4rem;
       text-align: center;
       margin-bottom: 50px;
-      margin-top: 100px;
+      margin-top: 50px;
       color: $secondaryColor;
     }
 
@@ -308,6 +316,8 @@ html {
       }
     }
 
+    
+
     .text-area {
       margin-top: 100px;
       font-family: $mainFont;
@@ -344,8 +354,8 @@ html {
       }
       &-placeholder {
         position: relative;
-          top: -31.25rem;
-          width: 37.5rem;
+        top: -31.25rem;
+        width: 37.5rem;
         }
 
       } 
@@ -355,6 +365,8 @@ html {
         border-radius: 25px;
         margin-bottom: 100px;
         margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
     
         .card-header {
           background-color:$secondaryColor;
@@ -444,7 +456,15 @@ html {
   .nav-item {
     width: 100%;
   }
-  
+  #header-content-text {
+    font-size: 3rem;
+  }
+  #botlogo {
+    top: 30px;
+    width: 20rem; 
+    position: relative;
+  }
+
 }
 
 
@@ -466,6 +486,17 @@ html {
   }
   .nav-item {
     width: 100%;
+  }
+  #header-content-text {
+    font-size: 5.5rem;
+  }
+  .navbar-nav {
+    width: 40%;
+  }
+  #botlogo {
+    top: 10px;
+    width: 30rem; 
+    position: relative;
   }
   
 }
@@ -491,7 +522,19 @@ html {
   .nav-item {
     width: 100%;
   }
-  
+ 
+
+  #header-content-text {
+    font-size: 5.5rem;
+  }
+  .navbar-nav {
+    width: 40%;
+  }
+  #botlogo {
+    position: relative;
+    top: 1px;
+    width: 30rem; 
+  }
   
 }
 
@@ -514,6 +557,17 @@ html {
   .nav-item {
     width: 100%;
   }
+  #header-content-text {
+    font-size: 5.5rem;
+  }
+  .navbar-nav {
+    width: 40%;
+  }
+  #botlogo {
+    position: relative;
+    top: 20px;
+    width: 30rem; 
+  }
   
 }
 
@@ -535,6 +589,18 @@ html {
   }
   .nav-item {
     width: 100%;
+  }
+  #header-content-text {
+    font-size: 5.5rem;
+  }
+  .navbar-nav {
+    width: 40%;
+  }
+ 
+  #botlogo {
+    position: relative;
+    top: -100px;
+    width: 30rem; 
   }
   
 }
@@ -559,4 +625,17 @@ html {
   .nav-item {
     width: auto;
   }
+  #header-content-text {
+    font-size: 5.5rem;
+  }
+  .navbar-nav {
+    width: 50%;
+  }
+
+  #botlogo {
+    position: relative;
+    top: -100px;
+    width: 30rem; 
+  }
+
 }

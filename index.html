@@ -18,21 +18,6 @@
 </head>
 
 <body class="container">
-	<!-- <div id="header" class="pos-f-t ">
-		<div class="collapse" id="navbarToggleExternalContent">
-			<div class="bg-dark p-4">
-				<h4 class="text-white">Collapsed content</h4>
-				<span class="text-muted">Toggleable via the navbar brand.</span>
-			</div>
-		</div>
-		<nav class="navbar navbar-dark bg-dark">
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-				aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		</nav>
-	</div> -->
 	<header id="header" class="content content-header">
 		<!-- navigation menu with logo -->
 		<div class="row justify-content-center">
@@ -71,9 +56,9 @@
 		</div>
 		<!-- header content -->
 		<div class="row justify-content-center">
-			<div class="col-md-8 col-lg-5">
+			<div class="col-10 col-sm-10 col-md-8 col-lg-5">
 				<div class="content header-content">
-					<h1 class="header-content-text">cryptusprice</h1>
+					<h1 id="header-content-text" class="header-content-text">cryptusprice</h1>
 					<p class="header-content-description">
 						Телеграм-бот для мониторинга изменения цены
 						лучшей в мире криптовалюты, отца всех электронных
@@ -85,7 +70,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-5">
+			<div class="col-lg-6">
 				<div class="phone-images">
 					<img class="header-content-image image-right" src="assets/smartphone left.png" alt="cruptusphone">
 					<img class="header-content-image image-one" src="assets/iphone-ru-one.png" alt="cruptusphone">
@@ -94,20 +79,15 @@
 			</div>
 		</div>
 		<div class="row justify-content-end">
-			<div class="col offset-6 offset-sm-7 offset-md-7 offset-lg-8">
-				<button class="button button-free-forever">БЕСПЛАТНО НАВСЕГДА</button>
+			<div class="col offset-6 offset-sm-7 offset-md-7 offset-lg-9">
+				<img id="botlogo" class="botlogo" src="assets/freeforever.png" alt="freeforever">
 			</div>
 		</div>
 	</header>
 	<main class="content content-main">
-		<div class="row justify-content-center text-center">
-			<div class="col">
-				<img class="botlogo" src="assets/botlogo.png" alt="botlogo">
-			</div>
-		</div>
 		<!-- SEPARATOR -->
 		<div class="row justify-content-center">
-			<div class="col-8">
+			<div class="col-4">
 				<div class="separator separator-header"></div>
 			</div>
 		</div>
@@ -125,7 +105,7 @@
 		</div>
 		<!-- information container wirh cards -->
 		<div class="row justify-content-center text-center">
-			<div class="col-8 col-sm-8 col-md-5 col-lg-3">
+			<div class="col-10 col-sm-8 col-md-5 col-lg-3">
 				<div class="information-container">
 					<img class="information-container-img" src="assets/time.png" alt="time">
 					<div class="text-container">
@@ -137,7 +117,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-8 col-sm-8 col-md-5 col-lg-3">
+			<div class="col-10 col-sm-8 col-md-5 col-lg-3">
 				<div class="information-container">
 					<img class="information-container-img" src="assets/telegram.png" alt="telegram">
 					<div class="text-container">
@@ -152,7 +132,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-8 col-sm-8 col-md-5 col-lg-3">
+			<div class="col-10 col-sm-8 col-md-5 col-lg-3">
 				<div class="information-container">
 					<img class="information-container-img" src="assets/dzen.png" alt="dzen">
 					<div class="text-container">
@@ -165,8 +145,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="row justify-content-center">
-			<div class="col-2.5">
+		<div class="row justify-content-center text-center">
+			<div class="col">
 				<button class="button button-install-bot">Установить бот</button>
 			</div>
 		</div>
@@ -196,7 +176,7 @@
 							по заданным параметрам
 						</li>
 						<li class="text-area-list-item">
-							С помощью функции «калькулятор», рассчитать доход и конвертацию
+							С помощью функции «калькулятор», рассчитать доход, или конвертацию
 						</li>
 						<li class="text-area-list-item">
 							Задать интересующие вопросы в чате технической поддержки
@@ -227,7 +207,7 @@
 			</div>
 		</div>
 		<div class="row justify-content-center text-center">
-			<div class="col-8 col-sm-8 col-md-6">
+			<div class="col-12 col-sm-10 col-md-6">
 				<div id="accordion">
 					<div class="card">
 						<div class="card-header" id="price">
@@ -514,14 +494,14 @@
 		<!-- BUTTONS SET -->
 		<div class="button-container">
 			<div class="row justify-content-center">
-				<div class="col-8 col-sm-6 col-md-4">
+				<div class="col-10 col-sm-8 col-md-4">
 					<button class="button button-install-telegram">Скачать Telegram</button>
 				</div>
-				<div class="col-8 col-sm-6 col-md-4">
+				<div class="col-10 col-sm-8 col-md-4">
 					<button class="button button-install-bot">Установить бот</button>
 				</div>
 
-				<div class="col-8 col-sm-6 col-md-4">
+				<div class="col-10 col-sm-8 col-md-4">
 					<button class="button button-support">Тех. поддержка</button>
 				</div>
 			</div>
