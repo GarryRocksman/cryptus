@@ -22,6 +22,7 @@ html {
 .material-icons {
   position: relative;
   margin: 0;
+  margin-top: 20px;
   top: -6px;
   margin-left: 20px;
   padding: 0;
@@ -49,9 +50,11 @@ html {
 
 .navigation .navbar-nav {
   width: 50%;
-  height: 100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: fixed;
-  top: -40px;
+  top: 0;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -62,6 +65,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -71,7 +76,7 @@ html {
           justify-content: center;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.8rem;
   background-color: #f59b00;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -79,7 +84,6 @@ html {
 
 .navigation .navbar-nav .nav-item {
   margin: 20px;
-  display: inline;
   text-decoration: none;
   color: #ffff;
 }
@@ -151,6 +155,7 @@ html {
   height: 6rem;
   color: #0a92ab;
   margin-top: 20px;
+  display: block;
 }
 
 .button-support {
@@ -428,6 +433,9 @@ html {
   .image-one {
     display: none;
   }
+  .nav-item {
+    width: 100%;
+  }
 }
 
 @media (min-width: 440px) {
@@ -445,6 +453,9 @@ html {
   }
   .image-one {
     display: none;
+  }
+  .nav-item {
+    width: 100%;
   }
 }
 
@@ -464,6 +475,9 @@ html {
   .image-one {
     display: none;
   }
+  .nav-item {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -482,6 +496,9 @@ html {
   .image-one {
     display: none;
   }
+  .nav-item {
+    width: 100%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -498,7 +515,10 @@ html {
     display: none;
   }
   .image-one {
-    display: inline-block;
+    display: block;
+  }
+  .nav-item {
+    width: 100%;
   }
 }
 
@@ -518,6 +538,9 @@ html {
   }
   .image-one {
     display: none;
+  }
+  .nav-item {
+    width: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

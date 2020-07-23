@@ -18,6 +18,21 @@
 </head>
 
 <body class="container">
+	<!-- <div id="header" class="pos-f-t ">
+		<div class="collapse" id="navbarToggleExternalContent">
+			<div class="bg-dark p-4">
+				<h4 class="text-white">Collapsed content</h4>
+				<span class="text-muted">Toggleable via the navbar brand.</span>
+			</div>
+		</div>
+		<nav class="navbar navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</nav>
+	</div> -->
 	<header id="header" class="content content-header">
 		<!-- navigation menu with logo -->
 		<div class="row justify-content-center">
@@ -30,12 +45,9 @@
 							</a>
 							<button id="open-button" class="navbar-toggler" type="button" data-toggle="collapse"
 								data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-								aria-expanded="false" aria-label="Toggle navigation" >
+								aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 							</button>
-							
-							
-
 						</nav>
 						<div class="collapse" id="navbarToggleExternalContent">
 							<div class="navbar-nav">
@@ -44,13 +56,14 @@
 								<a class="nav-item nav-link" href="#howitworks">КАК ЭТО РАБОТАЕТ</a>
 								<a class="nav-item nav-link" href="#more">ПОДРОБНЕЕ</a>
 								<button id="close-button" class="navbar-toggler" type="button" data-toggle="collapse"
-								data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-								aria-expanded="false" aria-label="Toggle navigation">
-								<span class="material-icons">
-									close
+									data-target="#navbarToggleExternalContent"
+									aria-controls="navbarToggleExternalContent" aria-expanded="false"
+									aria-label="Toggle navigation">
+									<span class="material-icons">
+										close
 									</span>
-							</button>
-							</div>	
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -81,14 +94,14 @@
 			</div>
 		</div>
 		<div class="row justify-content-end">
-			<div class="col-4">
+			<div class="col offset-6 offset-sm-7 offset-md-7 offset-lg-8">
 				<button class="button button-free-forever">БЕСПЛАТНО НАВСЕГДА</button>
 			</div>
 		</div>
 	</header>
 	<main class="content content-main">
 		<div class="row justify-content-center text-center">
-			<div class="col-3">
+			<div class="col">
 				<img class="botlogo" src="assets/botlogo.png" alt="botlogo">
 			</div>
 		</div>
@@ -194,9 +207,9 @@
 			</div>
 			<div class="col-8 order-1  col-md-8 order-md-1   col-md-8 order-md-1 col-lg-4 text-center">
 				<div class="video-area">
-					<video class="video-area-video"  autoplay loop>
+					<video class="video-area-video" autoplay loop>
 						<source src="assets/video/videorus.mp4" type="video/mp4">
-					</video> 
+					</video>
 					<img src="assets/iphone-x-RU.png" alt="videoplaceholder" class="video-area-placeholder">
 				</div>
 			</div>
@@ -302,11 +315,13 @@
 										<div id="collapse-summ" class="collapse" data-parent="#accordion-informing"
 											aria-labelledby="heading-summ">
 											<div class="card-body">
-												<p>Работает также, как «Установить процент» с тем отличием, что изменение
-												будет отслеживаться по установленной фиксированной сумме. Для активации
-												этой функции Вам необходимо перейти в меню "Оповещения", нажать на
-												кнопку "установить процент" и ввести нужную вам сумму.
-											</p>
+												<p>Работает также, как «Установить процент» с тем отличием, что
+													изменение
+													будет отслеживаться по установленной фиксированной сумме. Для
+													активации
+													этой функции Вам необходимо перейти в меню "Оповещения", нажать на
+													кнопку "установить процент" и ввести нужную вам сумму.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -324,11 +339,11 @@
 											aria-labelledby="heading-setprice">
 											<div class="card-body">
 												<p>
-												Идеально подходит, если вам важно не пропустить определённый уровень
-												цены. Для активации этой функции Вам необходимо перейти в меню
-												"Оповещения", нажать на кнопку "установить цену" и ввести желаемый
-												уровень цены биткоина.
-											</p>
+													Идеально подходит, если вам важно не пропустить определённый уровень
+													цены. Для активации этой функции Вам необходимо перейти в меню
+													"Оповещения", нажать на кнопку "установить цену" и ввести желаемый
+													уровень цены биткоина.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -386,8 +401,8 @@
 												</a>
 											</h5>
 										</div>
-										<div id="collapse-convertation" class="collapse" data-parent="#accordion-calculator"
-											aria-labelledby="heading-convertation">
+										<div id="collapse-convertation" class="collapse"
+											data-parent="#accordion-calculator" aria-labelledby="heading-convertation">
 											<div class="card-body">
 												<p>
 													Конвертирует указанную сумму в выбранном направлении. Для активации
