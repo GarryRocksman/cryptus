@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
@@ -17,7 +18,7 @@
 	<title>cryptus</title>
 </head>
 
-<body class="container">
+<body id="border" class="container">
 	<header id="header" class="content content-header">
 		<!-- navigation menu with logo -->
 		<div class="row justify-content-center">
@@ -25,7 +26,7 @@
 				<div class="navigation">
 					<div class="pos-f-t">
 						<nav class="navbar navbar-light">
-							<a class="navbar-brand" href="#header">
+							<a onClick="window.location.reload();" class="navbar-brand" href="#header">
 								<img class="logo" src="assets/logo.svg" alt="cryptus" />
 							</a>
 							<button id="open-button" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -35,15 +36,12 @@
 							</button>
 						</nav>
 						<div class="collapse" id="navbarToggleExternalContent">
-							<div class="navbar-nav">
+							<div id="navbar-nav" class="navbar-nav">
 								<a class="nav-item nav-link" href="#header">HOME</a>
 								<a class="nav-item nav-link" href="#mission">МИССИЯ</a>
 								<a class="nav-item nav-link" href="#howitworks">КАК ЭТО РАБОТАЕТ</a>
 								<a class="nav-item nav-link" href="#more">ПОДРОБНЕЕ</a>
-								<button id="close-button" class="navbar-toggler" type="button" data-toggle="collapse"
-									data-target="#navbarToggleExternalContent"
-									aria-controls="navbarToggleExternalContent" aria-expanded="false"
-									aria-label="Toggle navigation">
+								<button id="close-button" class="navbar-toggler">
 									<span class="material-icons">
 										close
 									</span>
@@ -56,8 +54,8 @@
 		</div>
 		<!-- header content -->
 		<div class="row justify-content-center">
-			<div class="col-10 col-sm-10 col-md-8 col-lg-5">
-				<div class="content header-content">
+			<div id="h-text" class="col-10 col-sm-10 col-md-10 col-lg-5">
+				<div id="header-content" class="content header-content">
 					<h1 id="header-content-text" class="header-content-text">cryptusprice</h1>
 					<p class="header-content-description">
 						Телеграм-бот для мониторинга изменения цены
@@ -65,8 +63,12 @@
 						денег - БИТКОИН.
 					</p>
 					<div class="header-buttons">
-						<button class="button button-install-telegram">Скачать Telegram</button>
-						<button class="button button-install-bot">Установить бот</button>
+						<form action="https://telegram.org/" method="get" target="_blank">
+							<button class="button button-install-telegram">Скачать Telegram</button>
+						</form>
+						<form action="https://t.me/Cryptusprice_bot" method="get" target="_blank">
+							<button  class="button button-install-bot">Установить бот</button>
+							</form>
 					</div>
 				</div>
 			</div>
@@ -147,7 +149,10 @@
 		</div>
 		<div class="row justify-content-center text-center">
 			<div class="col">
-				<button class="button button-install-bot">Установить бот</button>
+				<form action="https://t.me/Cryptusprice_bot" method="get" target="_blank">
+					<button  class="button button-install-bot">Установить бот</button>
+					</form>
+				</div>
 			</div>
 		</div>
 		<!-- SEPARATOR -->
@@ -164,7 +169,7 @@
 		</div>
 
 		<div class="row justify-content-center">
-			<div class="col-10 order-2 col-sm-10 order-sm-2  col-md-10 order-md-2  offset-md-1 order-lg-1">
+			<div class="col-10 order-2 col-sm-10 order-sm-2  col-md-10 order-md-2  offset-md-1 col-lg-7 order-lg-1">
 				<div class="text-area">
 					<h2 class="text-area-header">Ты можешь:</h2>
 					<ol class="text-area-list">
@@ -183,9 +188,11 @@
 						</li>
 					</ol>
 				</div>
-				<button class="button button-install-bot">Установить бот</button>
+				<form action="https://t.me/Cryptusprice_bot" method="get" target="_blank">
+					<button  class="button button-install-bot">Установить бот</button>
+					</form>
 			</div>
-			<div class="col-12 order-1  col-md-8 order-md-1  col-lg-4 text-center">
+			<div class="col-11 order-1 col-sm-10 col-md-8 order-md-1  col-lg-4 text-center">
 				<div class="video-area">
 					<video class="video-area-video" autoplay loop>
 						<source src="assets/video/videorus.mp4" type="video/mp4">
@@ -495,14 +502,20 @@
 		<div class="button-container">
 			<div class="row justify-content-center">
 				<div class="col-10 col-sm-8 col-md-4">
+					<form action="https://telegram.org/" method="get" target="_blank">
 					<button class="button button-install-telegram">Скачать Telegram</button>
+				</form>
 				</div>
 				<div class="col-10 col-sm-8 col-md-4">
-					<button class="button button-install-bot">Установить бот</button>
+					<form action="https://t.me/Cryptusprice_bot" method="get" target="_blank">
+					<button  class="button button-install-bot">Установить бот</button>
+					</form>
 				</div>
 
 				<div class="col-10 col-sm-8 col-md-4">
-					<button class="button button-support">Тех. поддержка</button>
+					<form action="https://t.me/CryptusChat" method="get" target="_blank">
+						<button class="button button-support">Тех. поддержка</button>
+					</form>
 				</div>
 			</div>
 		</div>

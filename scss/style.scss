@@ -27,6 +27,13 @@ $secondaryColor: #0a92ab;
 $lightColor: #ffff;
 $secondaryLight: #feca06;
 
+
+.border {
+  border: 10px solid $mainColor !important;
+  border-radius: 25px;
+  padding: 0 !important;
+}
+
 html {
   font-size: $fontSize;
   scroll-behavior: smooth;
@@ -37,7 +44,7 @@ html {
   position: relative;
   margin: 0;
   margin-top: 20px;
-  top: -6px;
+  top: -1px;
   margin-left: 20px;
   padding: 0;
   font-size: 2rem;
@@ -64,7 +71,7 @@ html {
   }
 
   .navbar-nav {
-    width: 50%;
+    width: 600px;
     height: fit-content;
     position: fixed;
     top: 0;
@@ -84,7 +91,7 @@ html {
     border-bottom-right-radius: 25px;
 
     .nav-item {
-      margin: 20px;
+      margin: 15px;
       text-decoration: none;
       color: $lightColor;
 
@@ -120,7 +127,7 @@ html {
 
 //buttons
 .button {
-  display: block;
+  display: inline-block;
   width: 25rem;
   height: 6rem;
   border-radius: 25px;
@@ -135,7 +142,6 @@ html {
   &:focus {
     outline: none;
   }
-
 
 
   &:focus {
@@ -153,16 +159,8 @@ html {
 
   &-install-bot {
     background-color: $mainColor;
-    display: inline;
   }
 
-  &-free-forever {
-    background-color: $secondaryLight;
-    color: $secondaryColor;
-    margin-top: 50px;
-    display: inline-block;
-
-  }
 
   &-support {
     background-color: $secondaryLight;
@@ -178,13 +176,18 @@ html {
 
   &-header {
     background-image: url(../assets/background/header.png);
-    height: 650px;
+    height: fit-content;
+    min-height: 500px;
+    padding-bottom: 20px;
 
+
+  
     .header-content {
-      margin-top: 120px;
-      margin-left: 30px;
+      margin-top: 80px;
+      
       position: relative;
       z-index: 1000;
+
 
       &-text {
         margin-top: 10px;
@@ -265,7 +268,7 @@ html {
       font-size: 4rem;
       text-align: center;
       margin-bottom: 50px;
-      margin-top: 50px;
+      margin-top: 80px;
       color: $secondaryColor;
     }
 
@@ -313,11 +316,11 @@ html {
     }
 
     .separator {
-      margin-top: 80px;
+      margin-top: 100px;
       border-top: 1px solid $mainColor;
 
       &-header {
-        margin-top: 20px;
+        margin-top: 50px;
       }
     }
 
@@ -482,6 +485,10 @@ html {
     font-size: 3rem;
   }
 
+  .header-content {
+    margin-top: 0 !important;
+  
+  }
 
 }
 
@@ -517,10 +524,11 @@ html {
     font-size: 5.5rem;
   }
 
-  .navbar-nav {
-    width: 40%;
-  }
 
+  .header-content {
+    margin-top: 0 !important;
+   
+  }
 
 }
 
@@ -558,10 +566,10 @@ html {
     font-size: 5.5rem;
   }
 
-  .navbar-nav {
-    width: 40%;
+  .header-content {
+    margin-top: 0 !important;
+  
   }
-
 
 }
 
@@ -597,10 +605,10 @@ html {
     font-size: 5.5rem;
   }
 
-  .navbar-nav {
-    width: 40%;
-  }
+  .header-content {
+    margin-top: 0 !important;
 
+  }
 
 }
 
@@ -637,11 +645,11 @@ html {
     font-size: 5.5rem;
   }
 
-  .navbar-nav {
-    width: 40%;
+  .header-content {
+    margin-top: 80px !important;
+    padding-top: 30px;
+
   }
-
-
 
 }
 
@@ -680,10 +688,9 @@ html {
     font-size: 5.5rem;
   }
 
-  .navbar-nav {
-    width: 50%;
+  .header-content {
+    margin-top: 80px !important;
+    padding-top: 0px;
+    margin-left: 30px;
   }
-
-
-
 }
