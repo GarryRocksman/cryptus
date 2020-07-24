@@ -169,13 +169,7 @@ html {
 
 .content-header {
   background-image: url(../assets/background/header.png);
-  height: 750px;
-}
-
-.content-header .botlogo {
-  position: relative;
-  top: -100px;
-  width: 30rem;
+  height: 650px;
 }
 
 .content-header .header-content {
@@ -212,7 +206,7 @@ html {
 
 .content-header .image-right {
   position: relative;
-  top: 12rem;
+  top: 9rem;
   width: 40rem;
   z-index: 1000;
 }
@@ -221,14 +215,14 @@ html {
   position: relative;
   width: 30rem;
   left: -12rem;
-  top: 0.7rem;
+  top: -6rem;
 }
 
 .content-header .image-one {
   position: relative;
   width: 35rem;
-  left: 12rem;
-  top: 12rem;
+  left: 20rem;
+  top: 1rem;
   margin-bottom: 50px;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
@@ -239,6 +233,11 @@ html {
   margin-bottom: 20px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
+}
+
+.content-main .botlogo {
+  width: 20rem;
+  display: inline-block;
 }
 
 .content-main .main-description {
@@ -416,7 +415,8 @@ html {
 }
 
 @media (min-width: 320px) {
-  .container, .container-sm {
+  .container,
+  .container-sm {
     max-width: 400px;
   }
   html {
@@ -440,15 +440,11 @@ html {
   #header-content-text {
     font-size: 3rem;
   }
-  #botlogo {
-    top: 30px;
-    width: 20rem;
-    position: relative;
-  }
 }
 
 @media (min-width: 440px) {
-  .container, .container-sm {
+  .container,
+  .container-sm {
     max-width: 539px;
   }
   html {
@@ -472,15 +468,11 @@ html {
   .navbar-nav {
     width: 40%;
   }
-  #botlogo {
-    top: 10px;
-    width: 30rem;
-    position: relative;
-  }
 }
 
 @media (min-width: 576px) {
-  .container, .container-sm {
+  .container,
+  .container-sm {
     max-width: 540px;
   }
   html {
@@ -504,15 +496,12 @@ html {
   .navbar-nav {
     width: 40%;
   }
-  #botlogo {
-    position: relative;
-    top: 1px;
-    width: 30rem;
-  }
 }
 
 @media (min-width: 768px) {
-  .container, .container-sm, .container-md {
+  .container,
+  .container-sm,
+  .container-md {
     max-width: 720px;
   }
   html {
@@ -536,15 +525,13 @@ html {
   .navbar-nav {
     width: 40%;
   }
-  #botlogo {
-    position: relative;
-    top: 20px;
-    width: 30rem;
-  }
 }
 
 @media (min-width: 992px) {
-  .container, .container-sm, .container-md, .container-lg {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
     max-width: 960px;
   }
   html {
@@ -568,15 +555,14 @@ html {
   .navbar-nav {
     width: 40%;
   }
-  #botlogo {
-    position: relative;
-    top: -100px;
-    width: 30rem;
-  }
 }
 
 @media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
     max-width: 1140px;
   }
   html {
@@ -600,11 +586,6 @@ html {
   }
   .navbar-nav {
     width: 50%;
-  }
-  #botlogo {
-    position: relative;
-    top: -100px;
-    width: 30rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

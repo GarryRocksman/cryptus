@@ -41,10 +41,11 @@ html {
   margin-left: 20px;
   padding: 0;
   font-size: 2rem;
-  color:$lightColor;
-      &:hover {
-      color:$textColor;
-      }
+  color: $lightColor;
+
+  &:hover {
+    color: $textColor;
+  }
 }
 
 
@@ -79,16 +80,18 @@ html {
     font-weight: normal;
     font-size: 1.8rem;
     background-color: $mainColor;
-    border-bottom-left-radius:25px;
-    border-bottom-right-radius:25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
     .nav-item {
       margin: 20px;
       text-decoration: none;
-      color:$lightColor;
+      color: $lightColor;
+
       &:hover {
-      color:$textColor;
+        color: $textColor;
       }
-    } 
+    }
 
   }
 
@@ -119,7 +122,7 @@ html {
 .button {
   display: block;
   width: 25rem;
-  height:6rem;
+  height: 6rem;
   border-radius: 25px;
   margin-top: 16px;
   font-size: 2rem;
@@ -132,8 +135,8 @@ html {
   &:focus {
     outline: none;
   }
-  
-  
+
+
 
   &:focus {
     outline: none;
@@ -152,16 +155,18 @@ html {
     background-color: $mainColor;
     display: inline;
   }
+
   &-free-forever {
     background-color: $secondaryLight;
-    color:$secondaryColor;
+    color: $secondaryColor;
     margin-top: 50px;
     display: inline-block;
-    
+
   }
-  &-support{
+
+  &-support {
     background-color: $secondaryLight;
-    color:$secondaryColor;
+    color: $secondaryColor;
   }
 }
 
@@ -169,28 +174,18 @@ html {
 
 .content {
   background-size: 100% 100%;
-  background-repeat: no-repeat;   
-  
+  background-repeat: no-repeat;
+
   &-header {
-    background-image: url(../assets/background/header.png); 
-    height: 750px;
+    background-image: url(../assets/background/header.png);
+    height: 650px;
 
-
-    .botlogo {
-      position: relative;
-      top: -100px;
-      width: 30rem; 
-    }
-
-  .header-content {
-
-    
-
+    .header-content {
       margin-top: 120px;
       margin-left: 30px;
       position: relative;
       z-index: 1000;
-  
+
       &-text {
         margin-top: 10px;
         font-size: 5.5rem;
@@ -198,7 +193,7 @@ html {
         font-family: $headerFont;
         color: $mainColor;
       }
-  
+
       &-description {
         margin-top: 16px;
         // padding: 8px;
@@ -206,42 +201,42 @@ html {
         font-family: $mainFont;
         color: $textColor;
       }
-  
-    .header-buttons {
-        margin-top: 48px; 
-      }
-  }
 
-  .phone-images {
+      .header-buttons {
+        margin-top: 48px;
+      }
+    }
+
+    .phone-images {
       position: relative;
       top: -9rem;
       width: 75rem;
-  }  
+    }
 
-  .image {
+    .image {
       &-right {
         position: relative;
-        top: 12rem;
+        top: 9rem;
         width: 40rem;
         z-index: 1000;
       }
-  
+
       &-left {
         position: relative;
         width: 30rem;
         left: -12rem;
-        top: 0.7rem;
+        top: -6rem;
       }
 
       &-one {
         position: relative;
         width: 35rem;
-        left: 12rem;
-        top: 12rem;
+        left: 20rem;
+        top: 1rem;
         margin-bottom: 50px;
         transform: rotate(5deg);
       }
-  }
+    }
 
   }
 
@@ -250,8 +245,12 @@ html {
     margin-bottom: 20px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
-  
-    
+
+    .botlogo {
+      width: 20rem;
+      display: inline-block;
+    }
+
 
     .main-description {
       font-family: $mainFont;
@@ -260,6 +259,7 @@ html {
       margin-bottom: 2rem;
       color: $textColor;
     }
+
     .main-h1 {
       font-family: $headerFont;
       font-size: 4rem;
@@ -276,23 +276,26 @@ html {
 
       .text-container {
         border: 1px solid $textColor;
-        border-radius:25px;
+        border-radius: 25px;
         height: 200px;
         padding: 20px;
+
         &:hover {
           border: 1px solid $secondaryColor;
           background-color: rgba($color: $secondaryColor, $alpha: 0.1);
           cursor: pointer;
-          box-shadow: 0 0 10px rgba($color: $secondaryColor, $alpha: 0.1);;
+          box-shadow: 0 0 10px rgba($color: $secondaryColor, $alpha: 0.1);
+          ;
         }
       }
-      
+
       &-img {
         width: 5rem;
         margin-bottom: 20px;
         text-align: center;
-        
+
       }
+
       &-header {
         margin-bottom: 10px;
         margin-top: 20px;
@@ -300,6 +303,7 @@ html {
         font-size: 2rem;
         color: $textColor
       }
+
       &-description {
         margin-bottom: 10px;
         font-family: $mainFont;
@@ -311,28 +315,32 @@ html {
     .separator {
       margin-top: 80px;
       border-top: 1px solid $mainColor;
+
       &-header {
         margin-top: 20px;
       }
     }
 
-    
+
 
     .text-area {
       margin-top: 100px;
       font-family: $mainFont;
       color: $textColor;
+
       &-header {
         font-size: 3rem;
         margin-bottom: 40px;
         font-family: $headerFont;
-        
+
       }
+
       &-list {
         padding-left: 40px;
         list-style-type: decimal;
         margin-bottom: 100px;
       }
+
       &-list-item {
         font-size: 2rem;
         margin-bottom: 50px;
@@ -342,7 +350,7 @@ html {
     .video-area {
       position: relative;
       margin-top: 40px;
-      top:-37.5rem;
+      top: -37.5rem;
       height: 75rem;
 
       &-video {
@@ -352,65 +360,70 @@ html {
         z-index: 1000;
         border-radius: 25px;
       }
+
       &-placeholder {
         position: relative;
         top: -31.25rem;
         width: 37.5rem;
-        }
+      }
 
-      } 
+    }
 
-      #accordion {
-        box-shadow: none;
+    #accordion {
+      box-shadow: none;
+      border-radius: 25px;
+      margin-bottom: 100px;
+      margin-top: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      .card-header {
+        background-color: $secondaryColor;
+        padding: 20px;
+      }
+
+      .card,
+      .card-header {
         border-radius: 25px;
-        margin-bottom: 100px;
-        margin-top: 50px;
-        margin-left: 10px;
-        margin-right: 10px;
-    
-        .card-header {
-          background-color:$secondaryColor;
-          padding: 20px;
-        }
-        
-        .card ,
-        .card-header {
-          border-radius: 25px;
-        }
-        h5 {
-          font-family: $headerFont;
-          font-size: 2rem;
-          a {
-            text-decoration: none;
-            color: white;
-          }
-        }
-        p {
-          font-family: $mainFont;
-          font-size: 2rem;
-          color: $textColor;
-          margin:10px;
+      }
+
+      h5 {
+        font-family: $headerFont;
+        font-size: 2rem;
+
+        a {
+          text-decoration: none;
+          color: white;
         }
       }
+
+      p {
+        font-family: $mainFont;
+        font-size: 2rem;
+        color: $textColor;
+        margin: 10px;
+      }
+    }
   }
 
   &-footer {
-    background-image: url(../assets/background/footer.png);   
+    background-image: url(../assets/background/footer.png);
     margin-bottom: 20px;
     border-radius: 50px;
 
     .row {
       text-align: center;
     }
-    
+
     .button-container {
-      padding-top: 30px;  
+      padding-top: 30px;
+
       // margin-left: 10%; 
       button {
         display: inline;
       }
     }
-    
+
 
     .copyright {
       margin: 30px;
@@ -419,9 +432,9 @@ html {
       color: $textColor
     }
 
-    
+
   }
-  
+
 }
 
 
@@ -435,207 +448,242 @@ html {
 
 
 @media (min-width: 320px) {
-  .container, .container-sm {
+
+  .container,
+  .container-sm {
     max-width: 400px;
   }
+
   html {
     font-size: 5px;
   }
+
   html {
-    font-size:7px;
+    font-size: 7px;
   }
+
   .image-left {
     display: none;
   }
+
   .image-right {
     display: none;
   }
+
   .image-one {
     display: none;
   }
+
   .nav-item {
     width: 100%;
   }
+
   #header-content-text {
     font-size: 3rem;
   }
-  #botlogo {
-    top: 30px;
-    width: 20rem; 
-    position: relative;
-  }
+
 
 }
 
 
 @media (min-width: 440px) {
-  .container, .container-sm {
+
+  .container,
+  .container-sm {
     max-width: 539px;
   }
+
   html {
-    font-size:7px;
+    font-size: 7px;
   }
+
   .image-left {
     display: none;
   }
+
   .image-right {
     display: none;
   }
+
   .image-one {
     display: none;
   }
+
   .nav-item {
     width: 100%;
   }
+
   #header-content-text {
     font-size: 5.5rem;
   }
+
   .navbar-nav {
     width: 40%;
   }
-  #botlogo {
-    top: 10px;
-    width: 30rem; 
-    position: relative;
-  }
-  
+
+
 }
 
 
 
 @media (min-width: 576px) {
-  .container, .container-sm {
+
+  .container,
+  .container-sm {
     max-width: 540px;
   }
+
   html {
     font-size: 7px;
   }
+
   .image-left {
     display: none;
   }
+
   .image-right {
     display: none;
   }
+
   .image-one {
     display: none;
   }
+
   .nav-item {
     width: 100%;
   }
- 
+
 
   #header-content-text {
     font-size: 5.5rem;
   }
+
   .navbar-nav {
     width: 40%;
   }
-  #botlogo {
-    position: relative;
-    top: 1px;
-    width: 30rem; 
-  }
-  
+
+
 }
 
 @media (min-width: 768px) {
-  .container, .container-sm, .container-md {
+
+  .container,
+  .container-sm,
+  .container-md {
     max-width: 720px;
   }
+
   html {
     font-size: 7px;
   }
+
   .image-left {
     display: none;
   }
+
   .image-right {
     display: none;
   }
+
   .image-one {
     display: none;
   }
+
   .nav-item {
     width: 100%;
   }
+
   #header-content-text {
     font-size: 5.5rem;
   }
+
   .navbar-nav {
     width: 40%;
   }
-  #botlogo {
-    position: relative;
-    top: 20px;
-    width: 30rem; 
-  }
-  
+
+
 }
 
 @media (min-width: 992px) {
-  .container, .container-sm, .container-md, .container-lg {
+
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
     max-width: 960px;
   }
+
   html {
     font-size: 7px;
   }
+
   .image-left {
     display: none;
   }
+
   .image-right {
     display: none;
   }
+
   .image-one {
     display: block;
   }
+
   .nav-item {
     width: 100%;
   }
+
   #header-content-text {
     font-size: 5.5rem;
   }
+
   .navbar-nav {
     width: 40%;
   }
- 
-  #botlogo {
-    position: relative;
-    top: -100px;
-    width: 30rem; 
-  }
-  
+
+
+
 }
 
 @media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl {
+
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
     max-width: 1140px;
   }
+
   html {
     font-size: 8px;
   }
+
   .image-left {
     display: inline-block;
   }
+
   .image-right {
     display: inline-block;
     left: 0px;
   }
+
   .image-one {
     display: none;
   }
+
   .nav-item {
     width: auto;
   }
+
   #header-content-text {
     font-size: 5.5rem;
   }
+
   .navbar-nav {
     width: 50%;
   }
 
-  #botlogo {
-    position: relative;
-    top: -100px;
-    width: 30rem; 
-  }
+
 
 }
