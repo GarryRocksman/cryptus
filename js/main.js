@@ -4,18 +4,26 @@ window.onload = function () {
     var closeButton = document.getElementById('close-button');
     var setBorder = document.getElementById('border');
     var htext = document.getElementById('h-text');
-    
-    window.addEventListener("resize", centered);
-    centered ();
+    var textArea = document.getElementById('text-area');
+
+
     function centered (){
-        if (innerWidth < 1000) {
-            htext.classList.toggle('text-center');
-        }
-        else {
-            htext.classList.delete('text-center');
+        if (innerWidth < 992) {
+            if (!htext.classList.contains('text-center')){
+                htext.classList.toggle('text-center');
+                textArea.classList.toggle('text-center');
+            }
+        } else {
+            if (htext.classList.contains('text-center')){
+                htext.classList.toggle('text-center');
+                textArea.classList.toggle('text-center');
+            }
         }
     }
 
+    window.addEventListener("resize", centered);
+
+    centered ();
 
     openButton.onclick = function () {
         openButton.style.display = 'none';
