@@ -20,6 +20,7 @@ $headerFont:'Montserrat-Bold',
 sans-serif;
 $mainFont: "Montserrat Alternates",
 sans-serif;
+
 //colors 
 $mainColor: #f59b00;
 $textColor: #919191;
@@ -524,8 +525,7 @@ html {
 
 
   .header-content {
-    margin-top: 0 !important;
-   
+    margin-top: 0 !important; 
   }
 
 }
@@ -648,6 +648,7 @@ html {
     padding-top: 30px;
 
   }
+  
 
 }
 
@@ -691,4 +692,5 @@ html {
     padding-top: 0px;
     margin-left: 30px;
   }
+ 
 }
