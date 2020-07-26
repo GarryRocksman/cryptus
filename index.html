@@ -20,7 +20,28 @@
 
 <body id="border" class="container">
 	<header id="header" class="content content-header">
-		<!-- navigation menu with logo -->
+		<!-- bottom mobile menu -->
+		<div id="bottom-menu" class="bottom-menu hide pos-f-t">
+			<div class="collapse" id="navbarToggleExternalContent">
+				<div class="navbar-bottom-container p-4">
+					<div id="navbar-nav" class="navbar-nav navbar-nav-bottom">
+						<a class="nav-item nav-link bottom-nav-item" href="#header">HOME</a>
+						<a class="nav-item nav-link bottom-nav-item" href="#mission">МИССИЯ</a>
+						<a class="nav-item nav-link bottom-nav-item" href="#howitworks">КАК ЭТО РАБОТАЕТ</a>
+						<a class="nav-item nav-link bottom-nav-item" href="#more">ПОДРОБНЕЕ</a>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-light">
+				<button class="navbar-toggler navbar-toggler-bottom" type="button" data-toggle="collapse"
+					data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon navbar-bottom-open"></span>
+					<span class="close navbar-bottom-close hide" aria-hidden="true">&times;</span>
+				</button>
+			</nav>
+		</div>
+		<!-- navigation top menu with logo -->
 		<div class="row justify-content-center">
 			<div class="col-sm col-md col-xl">
 				<div class="navigation">
@@ -35,7 +56,7 @@
 								<span class="navbar-toggler-icon"></span>
 							</button>
 						</nav>
-						<div class="collapse" id="navbarToggleExternalContent">
+						<div class="collapse top-menu" id="navbarToggleExternalContent">
 							<div id="navbar-nav" class="navbar-nav">
 								<a class="nav-item nav-link" href="#header">HOME</a>
 								<a class="nav-item nav-link" href="#mission">МИССИЯ</a>
@@ -67,8 +88,8 @@
 							<button class="button button-install-telegram">Скачать Telegram</button>
 						</form>
 						<form action="https://t.me/Cryptusprice_bot" method="get" target="_blank">
-							<button  class="button button-install-bot">Установить бот</button>
-							</form>
+							<button class="button button-install-bot">Установить бот</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -150,10 +171,10 @@
 		<div class="row justify-content-center text-center">
 			<div class="col">
 				<form action="https://t.me/Cryptusprice_bot" method="get" target="_blank">
-					<button  class="button button-install-bot">Установить бот</button>
-					</form>
-				</div>
+					<button class="button button-install-bot">Установить бот</button>
+				</form>
 			</div>
+		</div>
 		</div>
 		<!-- SEPARATOR -->
 		<div class="row justify-content-center">
@@ -169,7 +190,8 @@
 		</div>
 
 		<div id="text-area" class="row justify-content-center">
-			<div class="col-10 order-2 offset-0 col-sm-10 order-sm-2 offset-sm-0 col-md-10 order-md-2  offset-md-0 col-lg-7 offset-lg-1 order-lg-1">
+			<div
+				class="col-10 order-2 offset-0 col-sm-10 order-sm-2 offset-sm-0 col-md-10 order-md-2  offset-md-0 col-lg-7 offset-lg-1 order-lg-1">
 				<div class="text-area">
 					<h2 class="text-area-header">Ты можешь:</h2>
 					<ul class="text-area-list">
@@ -189,8 +211,8 @@
 					</ul>
 				</div>
 				<form action="https://t.me/Cryptusprice_bot" method="get" target="_blank">
-					<button  class="button button-install-bot">Установить бот</button>
-					</form>
+					<button class="button button-install-bot">Установить бот</button>
+				</form>
 			</div>
 			<div class="col-11 order-1 col-sm-10 col-md-8 order-md-1  col-lg-4 text-center">
 				<div class="video-area">
@@ -217,10 +239,10 @@
 			<div class="col-12 col-sm-10 col-md-6">
 				<div id="accordion">
 					<div class="card">
-						<div class="card-header" id="price">
+						<div class="card-header" id="price" class="collapsed" role="button" data-toggle="collapse"
+							href="#collapse-price" aria-expanded="false" aria-controls="collapse-price">
 							<h5 class="mb-0">
-								<a class="collapsed" role="button" data-toggle="collapse" href="#collapse-price"
-									aria-expanded="false" aria-controls="collapse-price">
+								<a>
 									ЦЕНА
 								</a>
 							</h5>
@@ -236,10 +258,10 @@
 						</div>
 					</div>
 					<div class="card">
-						<div class="card-header" id="informing">
+						<div class="card-header" id="informing" role="button" data-toggle="collapse"
+							href="#collapse-informing" aria-expanded="false" aria-controls="collapse-informing">
 							<h5 class="mb-0">
-								<a role="button" data-toggle="collapse" href="#collapse-informing" aria-expanded="false"
-									aria-controls="collapse-informing">
+								<a>
 									ОПОВЕЩЕНИЯ
 								</a>
 							</h5>
@@ -247,103 +269,49 @@
 						<div id="collapse-informing" class="collapse" data-parent="#accordion"
 							aria-labelledby="informing">
 							<div class="card-body">
-								<div id="accordion-informing">
-									<div class="card">
-										<div class="card-header" id="heading-persentage">
-											<h5 class="mb-0">
-												<a class="collapsed" role="button" data-toggle="collapse"
-													href="#collapse-persentage" aria-expanded="false"
-													aria-controls="collapse-persentage">
-													УСТАНОВИТЬ ПРОЦЕНТ
-												</a>
-											</h5>
-										</div>
-										<div id="collapse-persentage" class="collapse"
-											data-parent="#accordion-informing" aria-labelledby="heading-persentage">
-											<div class="card-body">
-												<p>Отлично подходит для непрерывного слежения за ценой, помогает
-													отслеживать направление её движение. Для активации этой функции Вам
-													необходимо перейти в меню "Оповещения", нажать на кнопку "установить
-													процент" и ввести нужный вам процент. </p>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="heading-time">
-											<h5 class="mb-0">
-												<a class="collapsed" role="button" data-toggle="collapse"
-													href="#collapse-time" aria-expanded="false"
-													aria-controls="collapse-time">
-													УСТАНОВИТЬ ВРЕМЯ
-												</a>
-											</h5>
-										</div>
-										<div id="collapse-time" class="collapse" data-parent="#accordion-informing"
-											aria-labelledby="heading-time">
-											<div class="card-body">
-												<p>Бот скажет вам цену биткоина тогда, когда вы его об этом попросите.
-													Бот может говорить вам цену каждое утро или вечер, раз в неделю, или
-													влюбое другое время. Для активации этой функции Вам необходимо
-													перейти в меню "Оповещения", нажать на кнопку "установить время" и
-													ввести интересуеще вас время.</p>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="heading-summ">
-											<h5 class="mb-0">
-												<a class="collapsed" role="button" data-toggle="collapse"
-													href="#collapse-summ" aria-expanded="false"
-													aria-controls="collapse-summ">
-													УСТАНОВИТЬ СУММУ
-												</a>
-											</h5>
-										</div>
-										<div id="collapse-summ" class="collapse" data-parent="#accordion-informing"
-											aria-labelledby="heading-summ">
-											<div class="card-body">
-												<p>Работает также, как «Установить процент» с тем отличием, что
-													изменение
-													будет отслеживаться по установленной фиксированной сумме. Для
-													активации
-													этой функции Вам необходимо перейти в меню "Оповещения", нажать на
-													кнопку "установить процент" и ввести нужную вам сумму.
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="heading-setprice">
-											<h5 class="mb-0">
-												<a class="collapsed" role="button" data-toggle="collapse"
-													href="#collapse-setprice" aria-expanded="false"
-													aria-controls="collapse-setprice">
-													УСТАНОВИТЬ ЦЕНУ
-												</a>
-											</h5>
-										</div>
-										<div id="collapse-setprice" class="collapse" data-parent="#accordion-informing"
-											aria-labelledby="heading-setprice">
-											<div class="card-body">
-												<p>
-													Идеально подходит, если вам важно не пропустить определённый уровень
-													цены. Для активации этой функции Вам необходимо перейти в меню
-													"Оповещения", нажать на кнопку "установить цену" и ввести желаемый
-													уровень цены биткоина.
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
+								<h5 class="accordeon-card-header">УСТАНОВИТЬ ПРОЦЕНТ</h5>
+								<p>Отлично подходит для непрерывного слежения за ценой, помогает
+									отслеживать направление её движение. Для активации этой функции Вам
+									необходимо перейти в меню "Оповещения", нажать на кнопку "установить
+									процент" и ввести нужный вам процент. </p>
 
+								<h5 class="accordeon-card-header">УСТАНОВИТЬ ВРЕМЯ</h5>
+
+
+								<p>Бот скажет вам цену биткоина тогда, когда вы его об этом попросите.
+									Бот может говорить вам цену каждое утро или вечер, раз в неделю, или
+									влюбое другое время. Для активации этой функции Вам необходимо
+									перейти в меню "Оповещения", нажать на кнопку "установить время" и
+									ввести интересуеще вас время.</p>
+
+								<h5 class="accordeon-card-header">УСТАНОВИТЬ СУММУ</h5>
+
+								<p>Работает также, как «Установить процент» с тем отличием, что
+									изменение
+									будет отслеживаться по установленной фиксированной сумме. Для
+									активации
+									этой функции Вам необходимо перейти в меню "Оповещения", нажать на
+									кнопку "установить процент" и ввести нужную вам сумму.
+								</p>
+
+								<h5 class="accordeon-card-header">УСТАНОВИТЬ ЦЕНУ</h5>
+
+
+								<p>
+									Идеально подходит, если вам важно не пропустить определённый уровень
+									цены. Для активации этой функции Вам необходимо перейти в меню
+									"Оповещения", нажать на кнопку "установить цену" и ввести желаемый
+									уровень цены биткоина.
+								</p>
 							</div>
+
 						</div>
 					</div>
 					<div class="card">
-						<div class="card-header" id="calculator">
+						<div class="card-header" id="calculator" role="button" data-toggle="collapse"
+							href="#collapse-calculator" aria-expanded="false" aria-controls="collapse-calculator">
 							<h5 class="mb-0">
-								<a role="button" data-toggle="collapse" href="#collapse-calculator"
-									aria-expanded="false" aria-controls="collapse-calculator">
+								<a>
 									КАЛЬКУЛЯТОР
 								</a>
 							</h5>
@@ -351,65 +319,37 @@
 						<div id="collapse-calculator" class="collapse" data-parent="#accordion"
 							aria-labelledby="calculator">
 							<div class="card-body">
-								<div id="accordion-calculator">
-									<div class="card">
-										<div class="card-header" id="heading-income">
-											<h5 class="mb-0">
-												<a class="collapsed" role="button" data-toggle="collapse"
-													href="#collapse-income" aria-expanded="false"
-													aria-controls="collapse-income">
-													ДОХОД
-												</a>
-											</h5>
-										</div>
-										<div id="collapse-income" class="collapse" data-parent="#accordion-calculator"
-											aria-labelledby="heading-income">
-											<div class="card-body">
-												<p>Позволяет рассчитать прибыль от инвестиций в биткоин. Вам необходимо
-													вводит дату и сумму денег, а бот рассчитает количество биткоина
-													купленного на указанную сумму по цене, которая была актуальна в
-													указанный день, а также покажет стоимость этих вложений на
-													сегодняшний день. Для активации этой функции Вам необходимо перейти
-													в меню "Калькулятор", нажать на кнопку "Доход", ввести сумму
-													инвестиций в выбраной в настройках валюте(на пример 1000) и затем
-													ввести дату в формате ГГГГ-ММ-ДД (2014-10-24).
+								<h5 class="accordeon-card-header"> ДОХОД</h5>
 
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="heading-convertation">
-											<h5 class="mb-0">
-												<a class="collapsed" role="button" data-toggle="collapse"
-													href="#collapse-convertation" aria-expanded="false"
-													aria-controls="collapse-convertation">
-													КОНВЕРТАЦИЯ
-												</a>
-											</h5>
-										</div>
-										<div id="collapse-convertation" class="collapse"
-											data-parent="#accordion-calculator" aria-labelledby="heading-convertation">
-											<div class="card-body">
-												<p>
-													Конвертирует указанную сумму в выбранном направлении. Для активации
-													этой функции Вам необходимо перейти в меню "Калькулятор", нажать на
-													кнопку "Конвертация", выбрать направление обмена и ввести
-													интрисующую Вас сумму.
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
+								<p>Позволяет рассчитать прибыль от инвестиций в биткоин. Вам необходимо
+									вводит дату и сумму денег, а бот рассчитает количество биткоина
+									купленного на указанную сумму по цене, которая была актуальна в
+									указанный день, а также покажет стоимость этих вложений на
+									сегодняшний день. Для активации этой функции Вам необходимо перейти
+									в меню "Калькулятор", нажать на кнопку "Доход", ввести сумму
+									инвестиций в выбраной в настройках валюте(на пример 1000) и затем
+									ввести дату в формате ГГГГ-ММ-ДД (2014-10-24).
+
+								</p>
+
+								<h5 class="accordeon-card-header"> КОНВЕРТАЦИЯ</h5>
+								</a>
+
+								<p>
+									Конвертирует указанную сумму в выбранном направлении. Для активации
+									этой функции Вам необходимо перейти в меню "Калькулятор", нажать на
+									кнопку "Конвертация", выбрать направление обмена и ввести
+									интрисующую Вас сумму.
+								</p>
 
 							</div>
 						</div>
 					</div>
 					<div class="card settings">
-						<div class="card-header" id="settings">
+						<div class="card-header" id="settings" role="button" data-toggle="collapse"
+							href="#collapse-settings" aria-expanded="false" aria-controls="collapse-settings">
 							<h5 class="mb-0">
-								<a role="button" data-toggle="collapse" href="#collapse-settings" aria-expanded="false"
-									aria-controls="collapse-settings">
+								<a>
 									НАСТРОЙКИ
 								</a>
 							</h5>
@@ -417,83 +357,31 @@
 						<div id="collapse-settings" class="collapse" data-parent="#accordion"
 							aria-labelledby="settings">
 							<div class="card-body">
-								<div id="accordion-settings">
-									<div class="card">
-										<div class="card-header" id="heading-language">
-											<h5 class="mb-0">
-												<a class="collapsed" role="button" data-toggle="collapse"
-													href="#collapse-language" aria-expanded="false"
-													aria-controls="collapse-language">
-													ЯЗЫК
-												</a>
-											</h5>
-										</div>
-										<div id="collapse-language" class="collapse" data-parent="#accordion-settings"
-											aria-labelledby="heading-language">
-											<div class="card-body">
-												<p> здесь Вы можете изменить язык</p>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="heading-exchange">
-											<h5 class="mb-0">
-												<a class="collapsed" role="button" data-toggle="collapse"
-													href="#collapse-exchange" aria-expanded="false"
-													aria-controls="collapse-exchange">
-													БИРЖА
-												</a>
-											</h5>
-										</div>
-										<div id="collapse-exchange" class="collapse" data-parent="#accordion-settings"
-											aria-labelledby="heading-exchange">
-											<div class="card-body">
-												<p>здесь Вы можете изменить биржу</p>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="heading-currency">
-											<h5 class="mb-0">
-												<a class="collapsed" role="button" data-toggle="collapse"
-													href="#collapse-currency" aria-expanded="false"
-													aria-controls="collapse-currency">
-													ВАЛЮТА
-												</a>
-											</h5>
-										</div>
-										<div id="collapse-currency" class="collapse" data-parent="#accordion-settings"
-											aria-labelledby="heading-currency">
-											<div class="card-body">
-												<p>здесь вы можете изменить валюту</p>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="heading-timezone">
-											<h5 class="mb-0">
-												<a class="collapsed" role="button" data-toggle="collapse"
-													href="#collapse-timezone" aria-expanded="false"
-													aria-controls="collapse-timezone">
-													ЧАСОВОЙ ПОЯС
-												</a>
-											</h5>
-										</div>
-										<div id="collapse-timezone" class="collapse" data-parent="#accordion-settings"
-											aria-labelledby="heading-timezone">
-											<div class="card-body">
-												<p>здесь вы можете изменить часовой пояс</p>
-											</div>
-										</div>
-									</div>
-								</div>
 
+								<h5 class="accordeon-card-header"> ЯЗЫК</h5>
+
+								<p> здесь Вы можете изменить язык</p>
+
+								<h5 class="accordeon-card-header"> БИРЖА</h5>
+
+								<p>здесь Вы можете изменить биржу</p>
+
+								<h5 class="accordeon-card-header"> ВАЛЮТА</h5>
+
+								<p>здесь вы можете изменить валюту</p>
+
+								<h5 class="accordeon-card-header"> ЧАСОВОЙ ПОЯС</h5>
+
+								<p>здесь вы можете изменить часовой пояс</p>
+							
 							</div>
+
 						</div>
 					</div>
-
 				</div>
+
 			</div>
+		</div>
 		</div>
 
 	</main>
@@ -503,12 +391,12 @@
 			<div class="row justify-content-center">
 				<div class="col-10 col-sm-8 col-md-4">
 					<form action="https://telegram.org/" method="get" target="_blank">
-					<button class="button button-install-telegram">Скачать Telegram</button>
-				</form>
+						<button class="button button-install-telegram">Скачать Telegram</button>
+					</form>
 				</div>
 				<div class="col-10 col-sm-8 col-md-4">
 					<form action="https://t.me/Cryptusprice_bot" method="get" target="_blank">
-					<button  class="button button-install-bot">Установить бот</button>
+						<button class="button button-install-bot">Установить бот</button>
 					</form>
 				</div>
 
@@ -538,5 +426,288 @@
 	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
 <script src="js/main.js"></script>
+
+
+
+
+<!-- <div id="accordion">
+	<div class="card">
+		<div class="card-header" id="price" class="collapsed" role="button" data-toggle="collapse" href="#collapse-price"
+		aria-expanded="false" aria-controls="collapse-price">
+			<h5 class="mb-0">
+				<a>
+					ЦЕНА
+				</a>
+			</h5>
+		</div>
+		<div id="collapse-price" class="collapse" data-parent="#accordion" aria-labelledby="price">
+			<div class="card-body">
+				<p>Вызывает диалог сообщающий текущую стоимость
+					криптовалюты.Имеет дополнительную функцию
+					«Подробнее», которая имеет вид кнопки в вызванном
+					диалоге.«Подробнее» дает более развернутую
+					информацию о цене.</p>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header" id="informing" role="button" data-toggle="collapse" href="#collapse-informing" aria-expanded="false"
+		aria-controls="collapse-informing">
+			<h5 class="mb-0">
+				<a>
+					ОПОВЕЩЕНИЯ
+				</a>
+			</h5>
+		</div>
+		<div id="collapse-informing" class="collapse" data-parent="#accordion"
+			aria-labelledby="informing">
+			<div class="card-body">
+				<div id="accordion-informing">
+					<div class="card">
+						<div class="card-header" id="heading-persentage">
+							<h5 class="mb-0">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									href="#collapse-persentage" aria-expanded="false"
+									aria-controls="collapse-persentage">
+									УСТАНОВИТЬ ПРОЦЕНТ
+								</a>
+							</h5>
+						</div>
+						<div id="collapse-persentage" class="collapse"
+							data-parent="#accordion-informing" aria-labelledby="heading-persentage">
+							<div class="card-body">
+								<p>Отлично подходит для непрерывного слежения за ценой, помогает
+									отслеживать направление её движение. Для активации этой функции Вам
+									необходимо перейти в меню "Оповещения", нажать на кнопку "установить
+									процент" и ввести нужный вам процент. </p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="heading-time">
+							<h5 class="mb-0">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									href="#collapse-time" aria-expanded="false"
+									aria-controls="collapse-time">
+									УСТАНОВИТЬ ВРЕМЯ
+								</a>
+							</h5>
+						</div>
+						<div id="collapse-time" class="collapse" data-parent="#accordion-informing"
+							aria-labelledby="heading-time">
+							<div class="card-body">
+								<p>Бот скажет вам цену биткоина тогда, когда вы его об этом попросите.
+									Бот может говорить вам цену каждое утро или вечер, раз в неделю, или
+									влюбое другое время. Для активации этой функции Вам необходимо
+									перейти в меню "Оповещения", нажать на кнопку "установить время" и
+									ввести интересуеще вас время.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="heading-summ">
+							<h5 class="mb-0">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									href="#collapse-summ" aria-expanded="false"
+									aria-controls="collapse-summ">
+									УСТАНОВИТЬ СУММУ
+								</a>
+							</h5>
+						</div>
+						<div id="collapse-summ" class="collapse" data-parent="#accordion-informing"
+							aria-labelledby="heading-summ">
+							<div class="card-body">
+								<p>Работает также, как «Установить процент» с тем отличием, что
+									изменение
+									будет отслеживаться по установленной фиксированной сумме. Для
+									активации
+									этой функции Вам необходимо перейти в меню "Оповещения", нажать на
+									кнопку "установить процент" и ввести нужную вам сумму.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="heading-setprice">
+							<h5 class="mb-0">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									href="#collapse-setprice" aria-expanded="false"
+									aria-controls="collapse-setprice">
+									УСТАНОВИТЬ ЦЕНУ
+								</a>
+							</h5>
+						</div>
+						<div id="collapse-setprice" class="collapse" data-parent="#accordion-informing"
+							aria-labelledby="heading-setprice">
+							<div class="card-body">
+								<p>
+									Идеально подходит, если вам важно не пропустить определённый уровень
+									цены. Для активации этой функции Вам необходимо перейти в меню
+									"Оповещения", нажать на кнопку "установить цену" и ввести желаемый
+									уровень цены биткоина.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header" id="calculator">
+			<h5 class="mb-0">
+				<a role="button" data-toggle="collapse" href="#collapse-calculator"
+					aria-expanded="false" aria-controls="collapse-calculator">
+					КАЛЬКУЛЯТОР
+				</a>
+			</h5>
+		</div>
+		<div id="collapse-calculator" class="collapse" data-parent="#accordion"
+			aria-labelledby="calculator">
+			<div class="card-body">
+				<div id="accordion-calculator">
+					<div class="card">
+						<div class="card-header" id="heading-income">
+							<h5 class="mb-0">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									href="#collapse-income" aria-expanded="false"
+									aria-controls="collapse-income">
+									ДОХОД
+								</a>
+							</h5>
+						</div>
+						<div id="collapse-income" class="collapse" data-parent="#accordion-calculator"
+							aria-labelledby="heading-income">
+							<div class="card-body">
+								<p>Позволяет рассчитать прибыль от инвестиций в биткоин. Вам необходимо
+									вводит дату и сумму денег, а бот рассчитает количество биткоина
+									купленного на указанную сумму по цене, которая была актуальна в
+									указанный день, а также покажет стоимость этих вложений на
+									сегодняшний день. Для активации этой функции Вам необходимо перейти
+									в меню "Калькулятор", нажать на кнопку "Доход", ввести сумму
+									инвестиций в выбраной в настройках валюте(на пример 1000) и затем
+									ввести дату в формате ГГГГ-ММ-ДД (2014-10-24).
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="heading-convertation">
+							<h5 class="mb-0">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									href="#collapse-convertation" aria-expanded="false"
+									aria-controls="collapse-convertation">
+									КОНВЕРТАЦИЯ
+								</a>
+							</h5>
+						</div>
+						<div id="collapse-convertation" class="collapse"
+							data-parent="#accordion-calculator" aria-labelledby="heading-convertation">
+							<div class="card-body">
+								<p>
+									Конвертирует указанную сумму в выбранном направлении. Для активации
+									этой функции Вам необходимо перейти в меню "Калькулятор", нажать на
+									кнопку "Конвертация", выбрать направление обмена и ввести
+									интрисующую Вас сумму.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="card settings">
+		<div class="card-header" id="settings">
+			<h5 class="mb-0">
+				<a role="button" data-toggle="collapse" href="#collapse-settings" aria-expanded="false"
+					aria-controls="collapse-settings">
+					НАСТРОЙКИ
+				</a>
+			</h5>
+		</div>
+		<div id="collapse-settings" class="collapse" data-parent="#accordion"
+			aria-labelledby="settings">
+			<div class="card-body">
+				<div id="accordion-settings">
+					<div class="card">
+						<div class="card-header" id="heading-language">
+							<h5 class="mb-0">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									href="#collapse-language" aria-expanded="false"
+									aria-controls="collapse-language">
+									ЯЗЫК
+								</a>
+							</h5>
+						</div>
+						<div id="collapse-language" class="collapse" data-parent="#accordion-settings"
+							aria-labelledby="heading-language">
+							<div class="card-body">
+								<p> здесь Вы можете изменить язык</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="heading-exchange">
+							<h5 class="mb-0">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									href="#collapse-exchange" aria-expanded="false"
+									aria-controls="collapse-exchange">
+									БИРЖА
+								</a>
+							</h5>
+						</div>
+						<div id="collapse-exchange" class="collapse" data-parent="#accordion-settings"
+							aria-labelledby="heading-exchange">
+							<div class="card-body">
+								<p>здесь Вы можете изменить биржу</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="heading-currency">
+							<h5 class="mb-0">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									href="#collapse-currency" aria-expanded="false"
+									aria-controls="collapse-currency">
+									ВАЛЮТА
+								</a>
+							</h5>
+						</div>
+						<div id="collapse-currency" class="collapse" data-parent="#accordion-settings"
+							aria-labelledby="heading-currency">
+							<div class="card-body">
+								<p>здесь вы можете изменить валюту</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="heading-timezone">
+							<h5 class="mb-0">
+								<a class="collapsed" role="button" data-toggle="collapse"
+									href="#collapse-timezone" aria-expanded="false"
+									aria-controls="collapse-timezone">
+									ЧАСОВОЙ ПОЯС
+								</a>
+							</h5>
+						</div>
+						<div id="collapse-timezone" class="collapse" data-parent="#accordion-settings"
+							aria-labelledby="heading-timezone">
+							<div class="card-body">
+								<p>здесь вы можете изменить часовой пояс</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div> -->
+
 
 </html>

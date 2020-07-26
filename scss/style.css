@@ -361,6 +361,11 @@ html {
   margin-right: 10px;
 }
 
+.content-main #accordion .accordeon-card-header {
+  font-family: "Montserrat-Bold", sans-serif;
+  color: #0a92ab;
+}
+
 .content-main #accordion .card-header {
   background-color: #0a92ab;
   padding: 20px;
@@ -411,6 +416,98 @@ html {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 2rem;
   color: #919191;
+}
+
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+  background-color: #f59b00;
+}
+
+.navbar-nav-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar-bottom-container {
+  background-color: #f59b00;
+}
+
+.bottom-nav-item {
+  color: #0a92ab;
+  font-size: 2rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 2;
+}
+
+.bottom-nav-item:hover {
+  color: #919191;
+}
+
+.navbar-toggler-bottom {
+  border: none;
+  font-size: 3rem;
+}
+
+.navbar-toggler-bottom:focus {
+  outline: none;
+}
+
+.material-icons-bottom {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  -webkit-animation: spin 0.2s linear 0s normal;
+          animation: spin 0.2s linear 0s normal;
+}
+
+.navbar-bottom-close {
+  margin-left: 5px;
+  font-size: 5rem;
+  font-weight: 10;
+  color: black;
+  text-decoration: none;
+  -webkit-animation: spin 0.2s linear 0s normal;
+          animation: spin 0.2s linear 0s normal;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+.hide {
+  display: none;
 }
 
 @media (min-width: 320px) {

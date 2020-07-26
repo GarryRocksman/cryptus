@@ -5,7 +5,25 @@ window.onload = function () {
     var setBorder = document.getElementById('border');
     var htext = document.getElementById('h-text');
     var textArea = document.getElementById('text-area');
+    var bottomMenu = document.getElementById('bottom-menu');
+    var bottomMenuOpenIcon = document.getElementsByClassName('navbar-bottom-open').item(0);
+    var bottomMenuCloseIcon = document.getElementsByClassName('navbar-bottom-close').item(0);
 
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        openButton.classList.toggle('hide');  
+        bottomMenu.classList.toggle('hide');
+        document.getElementsByClassName('top-menu').item(0).classList.toggle('hide'); 
+    }
+
+    bottomMenuOpenIcon.onclick = function () {
+        bottomMenuOpenIcon.classList.toggle('hide');
+        bottomMenuCloseIcon.classList.toggle('hide');
+    };
+    bottomMenuCloseIcon.onclick = function () {
+        bottomMenuOpenIcon.classList.toggle('hide');
+        bottomMenuCloseIcon.classList.toggle('hide');
+    };
 
     function centered (){
         if (innerWidth < 992) {
@@ -28,7 +46,6 @@ window.onload = function () {
     openButton.onclick = function () {
         openButton.style.display = 'none';
         closeButton.style.display = 'block';
-
         if (innerWidth > 800) {
             setBorder.classList.toggle('border');
         }
@@ -37,8 +54,8 @@ window.onload = function () {
     closeButton.onclick = function () {
         openButton.style.display = 'block';
         if (innerWidth > 1200) {
-            setBorder.classList.remove('border');
-            document.getElementsByClassName('collapse').item(0).classList.remove("show");
+            setBorder.classList.toggle('border');
+            document.getElementsByClassName('top-menu').item(0).classList.remove("show");
             window.scroll({
                 top: 0,
                 left: 0,
@@ -47,14 +64,15 @@ window.onload = function () {
         }
     };
 
-    document.getElementsByClassName('collapse').item(0)
+    document.getElementsByClassName('top-menu').item(0)
         .onclick = function () {
             if (innerWidth < 1200) {
                 setBorder.classList.remove('border');
                 openButton.style.display = 'block';
-                document.getElementsByClassName('collapse').item(0).classList.remove("show");
+                document.getElementsByClassName('top-menu').item(0).classList.remove("show");
             }
         };
+
 
 
 

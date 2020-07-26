@@ -379,10 +379,17 @@ html {
       margin-left: 10px;
       margin-right: 10px;
 
+      .accordeon-card-header {
+        font-family: $headerFont;
+        color: $secondaryColor;
+      }
+
       .card-header {
         background-color: $secondaryColor;
         padding: 20px;
       }
+
+      
 
       .card,
       .card-header {
@@ -437,6 +444,82 @@ html {
 
   }
 
+}
+
+
+
+//bottom menu 
+
+.bottom-menu {
+  position: fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+  z-index: 2000;
+  background-color: $mainColor;
+}
+
+.navbar-nav-bottom {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.navbar-bottom-container {
+background-color: $mainColor;
+}
+
+.bottom-nav-item {
+  color: $secondaryColor;
+  font-size: 2rem;
+  font-family: $mainFont;
+  line-height: 2;
+  &:hover {
+    color: $textColor;
+  }
+}
+
+
+.navbar-toggler-bottom{
+  border: none;
+font-size: 3rem;
+&:focus {
+  outline: none;
+}
+}
+
+
+.material-icons-bottom {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  animation: spin 0.2s linear 0s normal;
+}
+
+
+.navbar-bottom-close {
+  margin-left: 5px;
+  font-size: 5rem;
+  font-weight: 10;
+  color:black;
+  text-decoration: none;
+  animation: spin 0.2s linear 0s normal;
+}
+
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(90deg);}
+}
+
+
+
+
+.hide {
+  display: none;
 }
 
 
