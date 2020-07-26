@@ -427,6 +427,17 @@ html {
   background-color: #f59b00;
 }
 
+.navbar-bottom {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-bottom-open {
+  font-size: 8rem;
+  text-align: center;
+}
+
 .navbar-nav-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,7 +459,7 @@ html {
 
 .bottom-nav-item {
   color: #0a92ab;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Montserrat Alternates", sans-serif;
   line-height: 2;
 }
@@ -476,7 +487,7 @@ html {
 
 .navbar-bottom-close {
   margin-left: 5px;
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 10;
   color: black;
   text-decoration: none;

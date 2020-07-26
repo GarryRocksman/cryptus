@@ -459,6 +459,17 @@ html {
   background-color: $mainColor;
 }
 
+.navbar-bottom {
+  justify-content: center;
+}
+
+
+
+.navbar-bottom-open {
+  font-size: 8rem;
+  text-align: center;
+}
+
 .navbar-nav-bottom {
   display: flex;
   justify-content: center;
@@ -474,7 +485,7 @@ background-color: $mainColor;
 
 .bottom-nav-item {
   color: $secondaryColor;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: $mainFont;
   line-height: 2;
   &:hover {
@@ -502,7 +513,7 @@ font-size: 3rem;
 
 .navbar-bottom-close {
   margin-left: 5px;
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 10;
   color:black;
   text-decoration: none;
