@@ -359,6 +359,7 @@ html {
   margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .content-main #accordion .accordeon-card-header {

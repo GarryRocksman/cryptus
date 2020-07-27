@@ -378,10 +378,12 @@ html {
       margin-top: 50px;
       margin-left: 10px;
       margin-right: 10px;
+      cursor: pointer;
 
       .accordeon-card-header {
         font-family: $headerFont;
         color: $secondaryColor;
+      
       }
 
       .card-header {
