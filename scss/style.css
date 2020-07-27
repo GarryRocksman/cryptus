@@ -441,7 +441,7 @@ html {
 }
 
 .navbar-bottom-open {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .navbar-nav-bottom {
@@ -495,7 +495,7 @@ html {
 
 .navbar-bottom-close {
   margin-right: 5px;
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: 10;
   color: black;
   -webkit-box-shadow: none;
