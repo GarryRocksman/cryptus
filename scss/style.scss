@@ -456,7 +456,7 @@ html {
   left:0;
   width: 100%;
   z-index: 2000;
-  background-color: $mainColor;
+  background-color: rgba($color: white, $alpha: 0.001);
 }
 
 .navbar-bottom {
@@ -468,7 +468,11 @@ html {
 
 
 .navbar-bottom-open {
-  font-size: 4rem;
+  font-size: 3rem;
+  margin-bottom: 7px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: $secondaryColor;
 }
 
 .navbar-nav-bottom {
@@ -481,15 +485,14 @@ html {
 }
 
 .navbar-bottom-container {
-background-color: $mainColor;
+background-color: $secondaryLight;
 }
 
 .bottom-nav-item {
   color: $secondaryColor;
   font-size: 3rem;
   font-family: $mainFont;
-  line-height: 2;
- 
+  line-height: 1.8;
   &:hover {
     color: $textColor;
   }
@@ -516,10 +519,15 @@ font-size: 3rem;
 
 
 .navbar-bottom-close {
-  margin-right: 5px;
-  font-size: 7rem;
-  font-weight: 10;
-  color:black;
+  width: 50px;
+  border-radius: 25px;
+  border: 1px solid $secondaryColor;
+  //margin-right: 15px;
+  margin-bottom: 7px;
+  font-size: 5rem;
+  font-weight: normal;
+  color: $secondaryColor;
+  opacity: 1;
   box-shadow: none;
   text-shadow: none;
   text-decoration: none;
@@ -533,7 +541,9 @@ font-size: 3rem;
 }
 
 
-
+.color {
+  background-color: rgba($color:$secondaryLight, $alpha: 1)
+}
 
 .hide {
   display: none;
