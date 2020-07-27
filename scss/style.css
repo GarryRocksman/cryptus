@@ -428,14 +428,20 @@ html {
 }
 
 .navbar-bottom {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .navbar-bottom-open {
-  font-size: 8rem;
-  text-align: center;
+  font-size: 5rem;
 }
 
 .navbar-nav-bottom {
@@ -470,6 +476,8 @@ html {
 
 .navbar-toggler-bottom {
   border: none;
+  display: block;
+  margin-right: 2px;
   font-size: 3rem;
 }
 
@@ -486,10 +494,13 @@ html {
 }
 
 .navbar-bottom-close {
-  margin-left: 5px;
+  margin-right: 5px;
   font-size: 8rem;
   font-weight: 10;
   color: black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
   text-decoration: none;
   -webkit-animation: spin 0.2s linear 0s normal;
           animation: spin 0.2s linear 0s normal;

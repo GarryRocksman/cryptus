@@ -460,14 +460,15 @@ html {
 }
 
 .navbar-bottom {
-  justify-content: center;
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
 }
 
 
 
 .navbar-bottom-open {
-  font-size: 8rem;
-  text-align: center;
+  font-size: 5rem;
 }
 
 .navbar-nav-bottom {
@@ -488,6 +489,7 @@ background-color: $mainColor;
   font-size: 3rem;
   font-family: $mainFont;
   line-height: 2;
+ 
   &:hover {
     color: $textColor;
   }
@@ -496,6 +498,8 @@ background-color: $mainColor;
 
 .navbar-toggler-bottom{
   border: none;
+  display: block;
+  margin-right: 2px;
 font-size: 3rem;
 &:focus {
   outline: none;
@@ -512,10 +516,12 @@ font-size: 3rem;
 
 
 .navbar-bottom-close {
-  margin-left: 5px;
+  margin-right: 5px;
   font-size: 8rem;
   font-weight: 10;
   color:black;
+  box-shadow: none;
+  text-shadow: none;
   text-decoration: none;
   animation: spin 0.2s linear 0s normal;
 }
